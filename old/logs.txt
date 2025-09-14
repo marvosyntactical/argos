@@ -1,0 +1,100 @@
+[2m2025-09-14T15:51:52Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:51:52 +0000] [629] [INFO] Handling signal: int
+[2m2025-09-14T15:51:52Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:51:52 +0000] [639] [INFO] Worker exiting (pid: 639)
+[2m2025-09-14T15:51:52Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:51:52 +0000] [640] [INFO] Worker exiting (pid: 640)
+[2m2025-09-14T15:51:53Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:51:53 +0000] [629] [INFO] Shutting down: Master
+[2m2025-09-14T15:51:54Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 0
+[2m2025-09-14T15:51:54Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-09-14T15:51:54Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-09-14T15:51:54Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][   41.774805] reboot: Restarting system
+[2m2025-09-14T15:51:54Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m]2025-09-14T15:51:54.750932895 [01K54ESWFGYASMJ9FFZ28SPTRD:main] Running Firecracker v1.12.1
+[2m2025-09-14T15:51:54Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m]2025-09-14T15:51:54.751183865 [01K54ESWFGYASMJ9FFZ28SPTRD:main] Listening on API socket ("/fc.sock").
+[2m2025-09-14T15:51:55Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting init (commit: a570442)...
+[2m2025-09-14T15:51:55Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m Preparing to run: `gunicorn --workers 2 --threads 4 --timeout 120 --bind 0.0.0.0:8080 app:server` as root
+[2m2025-09-14T15:51:55Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-09-14T15:51:55Z[0m runner[0805164b621028] [32mfra[0m [[34minfo[0m]Machine created and started in 3.486s
+[2m2025-09-14T15:51:55Z[0m health[0805164b621028] [32mfra[0m [[31merror[0m]Health check on port 8080 has failed. Your app is not responding properly. Services exposed on ports [80, 443] will have intermittent failures until the health check passes.
+[2m2025-09-14T15:51:55Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m]2025/09/14 15:51:55 INFO SSH listening listen_address=[fdaa:1e:d3fb:a7b:4c7:70d4:9292:2]:22
+[2m2025-09-14T15:51:56Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:51:56 +0000] [633] [INFO] Starting gunicorn 23.0.0
+[2m2025-09-14T15:51:56Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:51:56 +0000] [633] [INFO] Listening at: http://0.0.0.0:8080 (633)
+[2m2025-09-14T15:51:56Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:51:56 +0000] [633] [INFO] Using worker: gthread
+[2m2025-09-14T15:51:56Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:51:56 +0000] [641] [INFO] Booting worker with pid: 641
+[2m2025-09-14T15:51:56Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:51:56 +0000] [642] [INFO] Booting worker with pid: 642
+[2m2025-09-14T15:52:04Z[0m health[0805164b621028] [32mfra[0m [[34minfo[0m]Health check on port 8080 is now passing.
+[2m2025-09-14T15:52:07Z[0m runner[0805deda649e08] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/argos-viz@sha256:c6c1511a6d23ce947ccd647fb6595cb710478072e9ab65c571a5ce942ecb515c
+[2m2025-09-14T15:52:07Z[0m runner[0805deda649e08] [32mfra[0m [[34minfo[0m]Container image registry.fly.io/argos-viz@sha256:c6c1511a6d23ce947ccd647fb6595cb710478072e9ab65c571a5ce942ecb515c already prepared
+[2m2025-09-14T15:52:07Z[0m runner[0805deda649e08] [32mfra[0m [[34minfo[0m]Configuring firecracker
+[2m2025-09-14T15:52:07Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Sending signal SIGINT to main child process w/ PID 629
+[2m2025-09-14T15:52:07Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:52:07 +0000] [629] [INFO] Handling signal: int
+[2m2025-09-14T15:52:07Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:52:07 +0000] [639] [INFO] Worker exiting (pid: 639)
+[2m2025-09-14T15:52:07Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:52:07 +0000] [640] [INFO] Worker exiting (pid: 640)
+[2m2025-09-14T15:52:08Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:52:08 +0000] [629] [INFO] Shutting down: Master
+[2m2025-09-14T15:52:08Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 0
+[2m2025-09-14T15:52:08Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-09-14T15:52:08Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-09-14T15:52:08Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][   40.995969] reboot: Restarting system
+[2m2025-09-14T15:52:09Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m]2025-09-14T15:52:09.962901327 [01K54ETAS2SZ91TK42T26T1MMG:main] Running Firecracker v1.12.1
+[2m2025-09-14T15:52:09Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m]2025-09-14T15:52:09.963099616 [01K54ETAS2SZ91TK42T26T1MMG:main] Listening on API socket ("/fc.sock").
+[2m2025-09-14T15:52:10Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting init (commit: a570442)...
+[2m2025-09-14T15:52:10Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Preparing to run: `gunicorn --workers 2 --threads 4 --timeout 120 --bind 0.0.0.0:8080 app:server` as root
+[2m2025-09-14T15:52:10Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-09-14T15:52:11Z[0m runner[0805deda649e08] [32mfra[0m [[34minfo[0m]Machine created and started in 4s
+[2m2025-09-14T15:52:11Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m]2025/09/14 15:52:11 INFO SSH listening listen_address=[fdaa:1e:d3fb:a7b:533:5738:e821:2]:22
+[2m2025-09-14T15:52:11Z[0m health[0805deda649e08] [32mfra[0m [[31merror[0m]Health check on port 8080 has failed. Your app is not responding properly. Services exposed on ports [80, 443] will have intermittent failures until the health check passes.
+[2m2025-09-14T15:52:11Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:52:11 +0000] [629] [INFO] Starting gunicorn 23.0.0
+[2m2025-09-14T15:52:11Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:52:11 +0000] [629] [INFO] Listening at: http://0.0.0.0:8080 (629)
+[2m2025-09-14T15:52:11Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:52:11 +0000] [629] [INFO] Using worker: gthread
+[2m2025-09-14T15:52:11Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:52:11 +0000] [639] [INFO] Booting worker with pid: 639
+[2m2025-09-14T15:52:11Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:52:11 +0000] [640] [INFO] Booting worker with pid: 640
+[2m2025-09-14T15:52:17Z[0m health[0805deda649e08] [32mfra[0m [[34minfo[0m]Health check on port 8080 is now passing.
+[2m2025-09-14T15:53:08Z[0m runner[0805deda649e08] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/argos-viz@sha256:4f55bbd194571a2b530112675d625e9bc5b9b06fdda7835b45e074d2a5174f8d
+[2m2025-09-14T15:53:09Z[0m runner[0805deda649e08] [32mfra[0m [[34minfo[0m]Successfully prepared image registry.fly.io/argos-viz@sha256:4f55bbd194571a2b530112675d625e9bc5b9b06fdda7835b45e074d2a5174f8d (1.261246026s)
+[2m2025-09-14T15:53:09Z[0m runner[0805deda649e08] [32mfra[0m [[34minfo[0m]Configuring firecracker
+[2m2025-09-14T15:53:09Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Sending signal SIGINT to main child process w/ PID 629
+[2m2025-09-14T15:53:09Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:09 +0000] [629] [INFO] Handling signal: int
+[2m2025-09-14T15:53:10Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:10 +0000] [639] [INFO] Worker exiting (pid: 639)
+[2m2025-09-14T15:53:10Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:10 +0000] [640] [INFO] Worker exiting (pid: 640)
+[2m2025-09-14T15:53:11Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:11 +0000] [629] [INFO] Shutting down: Master
+[2m2025-09-14T15:53:12Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 0
+[2m2025-09-14T15:53:12Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-09-14T15:53:12Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-09-14T15:53:12Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][   62.006248] reboot: Restarting system
+[2m2025-09-14T15:53:12Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m]2025-09-14T15:53:12.793335691 [01K54EW6FTXGEV0MGDFRQJVDET:main] Running Firecracker v1.12.1
+[2m2025-09-14T15:53:12Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m]2025-09-14T15:53:12.793501740 [01K54EW6FTXGEV0MGDFRQJVDET:main] Listening on API socket ("/fc.sock").
+[2m2025-09-14T15:53:13Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting init (commit: a570442)...
+[2m2025-09-14T15:53:13Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m Preparing to run: `gunicorn --workers 2 --threads 4 --timeout 120 --bind 0.0.0.0:8080 app:server` as root
+[2m2025-09-14T15:53:13Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-09-14T15:53:13Z[0m runner[0805deda649e08] [32mfra[0m [[34minfo[0m]Machine created and started in 5.854s
+[2m2025-09-14T15:53:14Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m]2025/09/14 15:53:14 INFO SSH listening listen_address=[fdaa:1e:d3fb:a7b:533:5738:e821:2]:22
+[2m2025-09-14T15:53:14Z[0m health[0805deda649e08] [32mfra[0m [[31merror[0m]Health check on port 8080 has failed. Your app is not responding properly. Services exposed on ports [80, 443] will have intermittent failures until the health check passes.
+[2m2025-09-14T15:53:14Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:14 +0000] [629] [INFO] Starting gunicorn 23.0.0
+[2m2025-09-14T15:53:14Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:14 +0000] [629] [INFO] Listening at: http://0.0.0.0:8080 (629)
+[2m2025-09-14T15:53:14Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:14 +0000] [629] [INFO] Using worker: gthread
+[2m2025-09-14T15:53:14Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:14 +0000] [639] [INFO] Booting worker with pid: 639
+[2m2025-09-14T15:53:14Z[0m app[0805deda649e08] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:14 +0000] [640] [INFO] Booting worker with pid: 640
+[2m2025-09-14T15:53:29Z[0m health[0805deda649e08] [32mfra[0m [[34minfo[0m]Health check on port 8080 is now passing.
+[2m2025-09-14T15:53:32Z[0m runner[0805164b621028] [32mfra[0m [[34minfo[0m]Pulling container image registry.fly.io/argos-viz@sha256:4f55bbd194571a2b530112675d625e9bc5b9b06fdda7835b45e074d2a5174f8d
+[2m2025-09-14T15:53:34Z[0m runner[0805164b621028] [32mfra[0m [[34minfo[0m]Successfully prepared image registry.fly.io/argos-viz@sha256:4f55bbd194571a2b530112675d625e9bc5b9b06fdda7835b45e074d2a5174f8d (2.543309664s)
+[2m2025-09-14T15:53:35Z[0m runner[0805164b621028] [32mfra[0m [[34minfo[0m]Configuring firecracker
+[2m2025-09-14T15:53:35Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m Sending signal SIGINT to main child process w/ PID 633
+[2m2025-09-14T15:53:35Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:35 +0000] [633] [INFO] Handling signal: int
+[2m2025-09-14T15:53:35Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:35 +0000] [641] [INFO] Worker exiting (pid: 641)
+[2m2025-09-14T15:53:35Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:35 +0000] [642] [INFO] Worker exiting (pid: 642)
+[2m2025-09-14T15:53:36Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:36 +0000] [633] [INFO] Shutting down: Master
+[2m2025-09-14T15:53:36Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m Main child exited normally with code: 0
+[2m2025-09-14T15:53:36Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting clean up.
+[2m2025-09-14T15:53:36Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][33m WARN[0m could not unmount /rootfs: EINVAL: Invalid argument
+[2m2025-09-14T15:53:36Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][  101.849210] reboot: Restarting system
+[2m2025-09-14T15:53:37Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m]2025-09-14T15:53:37.182890855 [01K54EWY4Q5QXRMV0JX8PBVC76:main] Running Firecracker v1.12.1
+[2m2025-09-14T15:53:37Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m]2025-09-14T15:53:37.183011646 [01K54EWY4Q5QXRMV0JX8PBVC76:main] Listening on API socket ("/fc.sock").
+[2m2025-09-14T15:53:37Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m Starting init (commit: a570442)...
+[2m2025-09-14T15:53:37Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m Preparing to run: `gunicorn --workers 2 --threads 4 --timeout 120 --bind 0.0.0.0:8080 app:server` as root
+[2m2025-09-14T15:53:37Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][32m INFO[0m [fly api proxy] listening at /.fly/api
+[2m2025-09-14T15:53:37Z[0m runner[0805164b621028] [32mfra[0m [[34minfo[0m]Machine created and started in 5.896s
+[2m2025-09-14T15:53:38Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m]2025/09/14 15:53:38 INFO SSH listening listen_address=[fdaa:1e:d3fb:a7b:4c7:70d4:9292:2]:22
+[2m2025-09-14T15:53:38Z[0m health[0805164b621028] [32mfra[0m [[31merror[0m]Health check on port 8080 has failed. Your app is not responding properly. Services exposed on ports [80, 443] will have intermittent failures until the health check passes.
+[2m2025-09-14T15:53:38Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:38 +0000] [629] [INFO] Starting gunicorn 23.0.0
+[2m2025-09-14T15:53:38Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:38 +0000] [629] [INFO] Listening at: http://0.0.0.0:8080 (629)
+[2m2025-09-14T15:53:38Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:38 +0000] [629] [INFO] Using worker: gthread
+[2m2025-09-14T15:53:38Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:38 +0000] [639] [INFO] Booting worker with pid: 639
+[2m2025-09-14T15:53:38Z[0m app[0805164b621028] [32mfra[0m [[34minfo[0m][2025-09-14 15:53:38 +0000] [640] [INFO] Booting worker with pid: 640
+[2m2025-09-14T15:53:50Z[0m health[0805164b621028] [32mfra[0m [[34minfo[0m]Health check on port 8080 is now passing.

@@ -1,0 +1,36 @@
+# fly.toml app configuration file generated for argos-viz on 2025-09-14T01:37:35+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'argos-viz'
+primary_region = 'fra'
+
+[build]
+  builtin = 'python'
+
+[env]
+  DEVICE = 'cpu'
+  MODEL_ID = 'distilgpt2'
+  PORT = '8080'
+
+[[services]]
+  protocol = 'tcp'
+  internal_port = 8080
+
+  [[services.ports]]
+    port = 80
+    handlers = ['http']
+
+  [[services.ports]]
+    port = 443
+    handlers = ['tls', 'http']
+
+  [[services.tcp_checks]]
+    interval = '15s'
+    timeout = '2s'
+
+[[vm]]
+  memory = '2gb'
+  cpu_kind = 'shared'
+  cpus = 1
