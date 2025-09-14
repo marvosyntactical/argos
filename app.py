@@ -288,6 +288,8 @@ The literature also discusses the phenomenon of **attention sinks**, where the f
 
 Namesake of this tool is [Argos Panoptes](https://en.wikipedia.org/wiki/Argus_Panoptes).
 
+Code is [here](https://github.com/marvosyntactical/argos).
+
 It goes without saying that this is vibecoded.
 
 If you like this (otherwise too haha), you can check out more of my stuff at [marvosyntactical.github.io](https://marvosyntactical.github.io). If you wanna chat about this or even want to buy me a coffee so I can deploy a better model on this page, just send me an email.
